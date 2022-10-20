@@ -22,9 +22,9 @@ void findMinMax(int *arr, int low, int high, int *min, int *max)
         if (arr[low] < arr[high])
         {
             if (arr[low] < *min)
-                *min = low;
+                *min = arr[low];
             if (arr[high] > *max)
-                *max = high;
+                *max = arr[high];
         }
         else
         {
